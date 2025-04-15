@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Siyu (Eloise) Li's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('research')">Research</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
+                    <li><a href="#" onclick="showSection('awards')">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="profile-pic">
+              <img src="profile/8.svg" alt="Siyu (Eloise) Li" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            </div>
+            <div class="right-section">
+              <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Siyu (Eloise) Li</h1>
+              </div>
+              <div class="profile-card">
+                <p class="summary">
+                    Siyu Li is a highly accomplished finance professional with a strong academic background in economics and quantitative finance. She has extensive experience in global markets, fixed-income derivatives, and client coverage, having worked with top financial institutions like Bank of America, Morgan Stanley, and Standard Chartered Bank. Her technical proficiency in R, Python, and VBA, combined with her leadership skills, has enabled her to develop innovative financial models and streamline processes. Siyu is also a recipient of prestigious scholarships and awards, reflecting her exceptional academic and leadership potential.
+                </p>
+              </div>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="https://linkedin.com/in/li-siyu-592b47197" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="mailto:Eloise.li@yale.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+8616601808105" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+
+        <section id="research" class="hidden">
+            <h2>Research Interests</h2>
+            <div id="research-interests-container" class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-field">Data Missingness</h3>
+                    <p class="research-description">Co-authored a research paper on data missingness, constructing a mathematical model in R to resolve instrumental data missingness problems, enhancing financial statement accuracy for portfolio management.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container" id="education-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2025</div>
+                        <div class="timeline-content">
+                            <h3>Master of Asset Management</h3>
+                            <span class="school">Yale University</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2023</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Sciences (Economics)</h3>
+                            <span class="school">Singapore Management University</span>
+                            <p class="field">Economics; Double Major in Quantitative Finance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container" id="experience-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2024 – Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Global Market Summer Analyst</h3>
+                            <span class="institution">Bank of America</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Conducted regulatory analysis for offshore Chinese clients accessing the onshore USDCNY curve.</li>
+                                    <li>Supported development and presentation of USDINR hedging strategies.</li>
+                                    <li>Led a Python-based initiative for DV01 risk management across the yield curve.</li>
+                                    <li>Streamlined manual processes through VBA automation, enhancing operational efficiency.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">Python</span>
+                                <span class="technique-tag">VBA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2023 – July 2023</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Fixed-income Derivatives Industrial Placement Analyst</h3>
+                            <span class="institution">Morgan Stanley</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Developed a pricing tool with cancellable feature using Bloomberg BLAN scripting tool.</li>
+                                    <li>Prepared FX and interest rate risk management pitch decks for major corporate clients.</li>
+                                    <li>Automated pricing sheets for interest rate collars, seagulls, and swaps.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">Bloomberg BLAN</span>
+                                <span class="technique-tag">VBA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2022 – Aug 2022</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Client Coverage Summer Analyst</h3>
+                            <span class="institution">Standard Chartered Bank</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Constructed in-depth analysis reviewing banking opportunities for logistics company.</li>
+                                    <li>Prepared pitch deck for potential bond investors.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 2021 – Dec 2021</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Consulting Intern</h3>
+                            <span class="institution">Bain & Company</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Designed cost saving strategies for off-shore marine drilling clients.</li>
+                                    <li>Developed VBA-enabled Excel tool to track progress and uncover potential risks.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">VBA</span>
+                                <span class="technique-tag">Excel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Technical Skills</h2>
+            <div id="technical-skills-container" class="skills-grid">
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>R</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-file-excel"></i>
+                    <span>Excel</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>VBA</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                    <span>PowerPoint</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>EViews</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-terminal"></i>
+                    <span>Bloomberg BLAN</span>
+                </div>
+            </div>
+        </section>
+          
+        <section id="publications" class="hidden">
+            <h2>Publications</h2>
+            <div class="publications-container" id="publications-container">
+                <div class="publication-card">
+                    <h3 class="publication-title">Research paper on data missingness</h3>
+                    <div class="publication-meta">
+                        <span class="publication-journal">Journal of the Statistical Software (JSS)</span>
+                    </div>
+                    <p class="publication-authors">Siyu Li, Professor Denis Leung</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="hidden">
+            <h2 class="section-title">Teaching Experience</h2>
+            <div class="content-container" id="teaching-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="teaching-role">Teaching Assistant</h3>
+                            <span class="teaching-institution">Yale University</span>
+                            <div class="courses-container">
+                                <h4>Courses:</h4>
+                                <ul>
+                                    <li>Fixed Income Securities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="hidden">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="content-container" id="awards-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="award-name">Jennifer Zhao Scholarship for Asset Management</h3>
+                            <span class="award-issuer">Yale University</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="award-name">Li Ka Shing Scholarship</h3>
+                            <span class="award-issuer">Singapore Management University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Project section
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const container = document.querySelector('.projects-container');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    </script>
+</body>
+</html>
